@@ -1,26 +1,16 @@
 package zettai;
 
-public class Main{ //P193 継承とオーバーライド
-	public static void main(String[] args) {
-	  Main mainInstance = new Main(); // Create an instance of Main
-      Car car = mainInstance.new Car();
-      System.out.println(car);
-      MyCar myCar = mainInstance.new MyCar();
-      System.out.println(myCar);
-		
-
-	}
+public class Main{ //P261 Test with JUnit
+	private static MyLogic myLogic = new MyLogic();
 	
-    public class MyCar extends Car {
-  	  public String toString() {
-      	return "The color of the car is blue.";
-  	  }
-    }
-    public class Car {
-	  public String toString() {
-    	return "The color of the car is red.";
-      }
-    }
+	public static void main(String[] args) {
+		System.out.println("計算1回目");
+		System.out.println(addMax10(1, 2));	
+	}
+	private static int addMax10(int a, int b) {
+		return myLogic.addMax10(a, b);
+	}
+ 
 
 
 }
