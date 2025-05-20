@@ -1,4 +1,4 @@
-# java_study_2024_00
+# java_study_2024_00_Basic
  Following the book "絶対にJavaプログラマーになりたい方へ"
 
 書籍は無駄なくバランスよく記載されていた。
